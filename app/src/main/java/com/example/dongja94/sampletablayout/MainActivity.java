@@ -21,10 +21,12 @@ public class MainActivity extends AppCompatActivity {
 
         tabs.setupWithViewPager(pager);
 
-        tabs.setTabsFromPagerAdapter(adpater);
-//        for (int i = 0; i < 10; i++) {
-//            tabs.addTab(tabs.newTab().setText("Tab" + i));
-//        }
+//        tabs.setTabsFromPagerAdapter(adpater);
+
+        tabs.removeAllTabs();
+        for (int i = 0; i < 10; i++) {
+            tabs.addTab(tabs.newTab().setText("Tab" + i));
+        }
 
 //        tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 //            @Override
